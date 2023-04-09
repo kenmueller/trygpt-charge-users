@@ -24,7 +24,9 @@ const main = async () => {
 	if (!response.ok)
 		throw new HttpError(response.status, await response.text())
 
-	console.log('Chargin users... DONE')
+	console.log(JSON.stringify(await response.json(), null, 2))
+
+	console.log('Charging users... DONE')
 }
 
 main()
