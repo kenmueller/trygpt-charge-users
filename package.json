@@ -1,0 +1,15 @@
+{
+	"name": "trygpt-charge-users",
+	"version": "1.0.0",
+	"engines": {
+		"node": ">=19.6.1"
+	},
+	"scripts": {
+		"dev": "env-cmd node .",
+		"start": "node ."
+	},
+	"devDependencies": {
+		"env-cmd": "^10.1.0"
+	},
+	"private": true
+}
