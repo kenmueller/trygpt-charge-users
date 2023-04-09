@@ -1,5 +1,5 @@
 if (!process.env.ORIGIN) throw new Error('Missing ORIGIN')
-if (!process.env.TOKEN) throw new Error('Missing TOKEN')
+if (!process.env.SECRET) throw new Error('Missing SECRET')
 
 class HttpError extends Error {
 	constructor(code, message) {
@@ -16,7 +16,7 @@ const main = async () => {
 		{
 			method: 'POST',
 			headers: {
-				authorization: `Bearer ${process.env.TOKEN}`
+				authorization: `Bearer ${process.env.SECRET}`
 			}
 		}
 	)
