@@ -27,4 +27,4 @@ const main = async () => {
 	console.log('Chargin users... DONE')
 }
 
-main().catch(console.error)
+main()
